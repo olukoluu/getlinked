@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
+}
+
+:root {
+  --animate-duration: 3000ms;
+  --animate-delay: 900s;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ad3aff38;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D434FE;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d634feb6;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #150e28 !important ;
+  color: #f5f5f5;
+  font-family: "Montserrat", "sans-serif";
+}
+
+ion-icon{
+  color: #f5f5f5;
+}
+
+li{
+  margin-left: 20px;
+  padding: 5px;
+  list-style-image: url('./assets/images/tick.png');
+}
