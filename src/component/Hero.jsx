@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section
       id="overview"
-      className="no-scrollbar overflow-y-hidden relative md:px-0 md:pl-24 mt-[95px] md:mt-[90px] border-b border-[#ffffff10] md:h-[87vh]"
+      className="no-scrollbar overflow-y-hidden relative md:px-0 md:pl-24 mt-[24px] md:mt-[90px] border-b border-[#ffffff10] md:h-[87vh]"
     >
       <img
         src={flare}
