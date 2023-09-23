@@ -17,6 +17,10 @@
   }
 }
 
+*{
+  box-sizing: border-box;
+}
+
 :root {
   --animate-duration: 3000ms;
   --animate-delay: 900s;
@@ -43,6 +47,7 @@
 }
 
 body {
+  position: relative;
   overflow-x: hidden;
   background-color: #150e28 !important ;
   color: #f5f5f5;

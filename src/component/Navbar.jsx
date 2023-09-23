@@ -8,7 +8,7 @@ const Navbar = ({ isContact }) => {
 
   return (
     <nav
-      className={`md:fixed top-0 w-full bg-[#150e28] z-40 text-white px-6 md:px-24 py-4 md:py-0 md:pt-10 md:pb-4 ${
+      className={`fixed top-0 left w-full bg-[#150e28] z-40 text-white px-6 md:px-24 py-4 md:py-0 md:pt-10 md:pb-4 ${
         isContact ? "hidden md:flex" : ""
       } flex items-center justify-between border-b border-[#ffffff10]`}
     >
@@ -21,7 +21,7 @@ const Navbar = ({ isContact }) => {
       <div
         className={`${
           menuOpen ? "translate-x-0" : " translate-x-full"
-        } fixed flex gap-4 p-12 pt-24 md:p-0 top-0 left-0 h-[50vh] w-full bg-[#150e28] z-10 flex-col md:static md:flex-row md:items-center md:justify-between md:w-3/5 md:h-0 md:translate-x-0 transition duration-1000 delay-100 `}
+        } fixed flex gap-4 p-12 pt-24 md:p-0 top-0 left-0 h-[50vh] w-full bg-[#150e28] z-40 flex-col md:static md:flex-row md:items-center md:justify-between md:w-3/5 md:h-0 md:translate-x-0 transition duration-1000 delay-100 `}
       >
         <div
           onClick={() => setMenuOpen(false)}
@@ -59,7 +59,7 @@ const Navbar = ({ isContact }) => {
         </Link>
       </div>
       
-      <div className=" absolute right-0 md:hidden" onClick={() => setMenuOpen(true)}>
+      <div className=" md:hidden" onClick={() => setMenuOpen(true)}>
         <Icon icon="jam:menu" color="whitesmoke" width="40" />
       </div>
     </nav>

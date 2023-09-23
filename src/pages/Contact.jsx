@@ -9,7 +9,7 @@ const Contact = () => {
   const isContact = true;
   const navigate = useNavigate();
   const goBack = () => {
-    navigate("/home", { replace: true });
+    navigate("/", { replace: true });
   };
 
   return (

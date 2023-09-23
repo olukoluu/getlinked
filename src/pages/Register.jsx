@@ -19,7 +19,7 @@ const Register = () => {
     <>
       <Navbar isContact={isContact} />
       {isSuccess && <SuccessModal setIsSuccess={setIsSuccess} />}
-      <div className=" md:overflow-hidden relative pt-10 md:pt-0 md:mt-20 md:pr-24  flex flex-col md:flex-row justify-between items-center md:h-[88vh] w-full text-sm">
+      <div className=" h-fit overflow-hidden relative pt-10 md:pt-0 md:mt-20 md:pr-24  flex flex-col md:flex-row justify-between items-center md:h-[88vh] w-full text-sm">
       <div onClick={goBack} className=" md:hidden absolute top-8 left-8 border border-[#D434FE] rounded-full z-40">
           <Icon icon="uil:arrow-left" width="20" />
         </div>

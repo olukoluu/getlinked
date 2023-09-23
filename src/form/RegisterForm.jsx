@@ -83,7 +83,7 @@ const RegisterForm = ({ setIsSuccess }) => {
           </div>
 
           <div className=" w-[36%] md:w-[45%] flex flex-col gap-1">
-            <label htmlFor="size">Size</label>
+            <label htmlFor="group_size">Size</label>
             <select
               className=" bg-[#120a29] border rounded p-2 md:px-4 text-xs"
               name="group_size"

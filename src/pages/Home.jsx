@@ -10,7 +10,7 @@ import Timeline from "../component/Timeline";
 
 const Home = () => {
   return (
-    <>
+    <main className=" w-full overflow-hidden">
       <Navbar />
       <Hero />
       <Section />
@@ -20,7 +20,7 @@ const Home = () => {
       <Partners />
       <Policy />
       <Footer />
-    </>
+    </main>
   );
 };
 
