@@ -29,7 +29,7 @@ const Hero = () => {
       />
       <img
         src={star}
-        className="absolute right-[10%] md:right-[40%] top-[35%] md:top-16 w-5 opacity-20 animate-pulse-slow"
+        className="absolute right-[10%] md:right-[40%] top-[35%] md:top-16 w-5 opacity-100 animate-pulse-slow"
       />
       <img
         src={star}
@@ -90,7 +90,7 @@ const Hero = () => {
           />
           <img
             src={Stars}
-            className=" animate-pulse absolute -top-1 md:right-20 w-[95%] md:w-10/12 md:h-[32rem]"
+            className=" animate-spin-slow absolute -top-1 md:right-20 w-[95%] md:w-10/12 md:h-[83.3]"
           />
         </div>
       </div>

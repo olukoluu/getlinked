@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { faq, star, starpu } from "../assets/image";
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
+
 
 const FAQS = [
   {
@@ -45,7 +47,12 @@ const Accordion = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="accordion text-start md:w-[90%] p-2 border-b border-[#D434FE]">
+    <motion.div
+    initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 100 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+     className="accordion text-start md:w-[90%] p-2 border-b border-[#D434FE]">
       <div className=" flex justify-between items-center">
         <p className=" text-sm md:text-base">{question}</p>
         <span
@@ -62,7 +69,7 @@ const Accordion = ({ question, answer }) => {
       {isOpen && (
         <p className=" text-xs md:text-sm mt-2 leading-normal">{answer}</p>
       )}
-    </div>
+    </motion.div>
   );
 };
 
@@ -81,7 +88,12 @@ const Faqs = () => {
         className="absolute left-3 md:left-36 md:top-[50%] md:bottom-48 w-4 animate-pulse"
       />
 
-      <div className=" text-center md:text-start md:w-2/4 md:pl-20">
+      <motion.div
+      initial={{ x: -50, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 100 }}
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ delay: 0.2, duration: 0.5 }}
+       className=" text-center md:text-start md:w-2/4 md:pl-20">
         <h2 className="font-semibold text-xl md:text-2xl leading-normal tracking-wider font-['Clash_Display']">
           Frequently Ask
         </h2>
@@ -97,8 +109,13 @@ const Faqs = () => {
             <Accordion key={item.id} {...item} />
           ))}
         </div>
-      </div>
-      <img src={faq} className=" md:w-[45%] mt-12 md:mt-0" />
+      </motion.div>
+      <motion.img
+      initial={{ x: 50, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 100 }}
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ delay: 0.2, duration: 0.5 }}
+       src={faq} className=" md:w-[45%] mt-12 md:mt-0" />
     </article>
   );
 };
