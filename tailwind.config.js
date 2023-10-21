@@ -5,7 +5,8 @@ export default {
     extend: {
       animation: {
         "pulse-slow": "pulse 3s linear infinite",
-        
+        "spin-slow":"spin 300s linear infinite",
+        "bounce-slow":"bounce 3s linear infinite"
       },
     },
   },
